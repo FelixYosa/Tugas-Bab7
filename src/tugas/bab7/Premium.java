@@ -6,12 +6,12 @@ package mainsalon;
 
 public class Premium extends Salon {
 
-    private double jasa, Produk;
+    private double jasa, barang;
 
-    public Premium(String Nama, String Member, double jasa, double Produk) {
+    public Premium(String Nama, String Member, double jasa, double barang) {
         super(Nama, Member);
         setJasa(jasa);
-        setBarang(Produk);
+        setBarang(barang);
     }
 
     public void setJasa(double jasa) {
@@ -22,12 +22,12 @@ public class Premium extends Salon {
         return jasa;
     }
 
-    public void setBarang(double Produk) {
-        this.Produk = Produk;
+    public void setBarang(double barang) {
+        this.barang = barang;
     }
 
     public double getBarang() {
-        return Produk;
+        return barang;
     }
 
     @Override
